@@ -143,6 +143,7 @@ alphasize,ALPHAsize,numsize - размеры алфавитов, key - ключ, count - счетчик фай
 						newsymb=numbers[newnumb];//получаем зашифрованный символ
 						buffer+=newsymb;}//добавляем символ в буфер
 								   }
+				else buffer+=symb;//добавляем если символ не буква и не цифра
 		}
 		}
 		else if (usertype==1)//проверка на тип кодирования текста: decode
@@ -176,6 +177,7 @@ alphasize,ALPHAsize,numsize - размеры алфавитов, key - ключ, count - счетчик фай
 						newsymb=numbers[newnumb];//получаем зашифрованный символ
 						buffer+=newsymb;}//добавляем символ в буфер
 									}
+				else buffer+=symb;//добавляем если символ не буква и не цифра
 			}
 			}
 	infile.close();//закрываем поток чтения
